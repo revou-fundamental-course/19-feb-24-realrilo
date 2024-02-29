@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Company Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Our Headquarter</h1>
+      <p>Jakarta</p>
+      <p>Bandung</p>
+      <p>Surabaya</p>
+    </header>
+    <main>
+      <form id="contactForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="dob">Tanggal Lahir:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="gender">Jenis Kelamin:</label>
+        <label for="lakiLaki">
+          <input type="radio" id="lakiLaki" name="gender" value="lakiLaki" required />
+          Laki-Laki
+        </label>
+        <label for="perempuan">
+          <input type="radio" id="perempuan" name="gender" value="perempuan" required />
+          Perempuan
+        </label>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="formOutput"></div>
+    </main>
+    <footer>
+      <p>Bandung Time: <span id="bandungTime"></span></p>
+      <p>Surabaya Time: <span id="surabayaTime"></span></p>
+      <p>Jakarta Time: <span id="jakartaTime"></span></p>
+      <p>Current Time: <span id="currentTime"></span></p>
+    </footer>
+  </body>
+</html>
